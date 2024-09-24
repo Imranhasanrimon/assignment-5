@@ -28,7 +28,8 @@ document.getElementById('noakhali-btn').addEventListener('click', function () {
             <p>Date: ${new Date()}</p>
         </div>
 `
-    document.getElementById('history').append(newHistory)
+    // document.getElementById('history').append(newHistory)
+    idSelector('history').append(newHistory)  //for reusable function
 
     //showing confirmation modal
     my_modal_5.showModal()
@@ -128,3 +129,5 @@ document.getElementById('donation-btn').addEventListener('click', function () {
     document.getElementById('donation-btn').classList.add('bg-primary')
 
 })
+
+//Navigating to Blog page

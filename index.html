@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh</title>
-    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <!-- daisyUI and Tailwind CDN  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -27,30 +27,31 @@
 <body>
     <!-- header section starts here  -->
     <header class="sticky top-0 backdrop-blur-lg pb-1">
-        <nav class=" bg-secondary">
-            <div
-                class="navbar max-w-screen-2xl w-11/12 mx-auto flex justify-between items-center flex-col sm:flex-row text-xl gap-2 py-3">
-                <div class="">
-
-                    <a href="./faq.html" class="btn  text-xl bg-primary font-bold">Blog</a>
-                </div>
-                <div class=" flex items-center gap-3 font-bold">
-                    <img class="w-6 sm:w-8 md:w-12" src="./assets/logo.png" alt="">
-                    <h2>Donate Bangladesh</h2>
-                </div>
-                <div class="">
-                    <div class="flex items-center gap-3 font-bold text-gray-500">
-                        <img src="./assets/coin.png" alt="">
-                        <h3><span id="my-balance">5000</span> BDT</h3>
+        <nav>
+            <div class="bg-secondary">
+                <div
+                    class=" navbar max-w-screen-2xl w-11/12 mx-auto flex justify-between items-center flex-col sm:flex-row text-xl gap-2 py-3">
+                    <div>
+                        <a href="./blog.html" class="btn  text-xl bg-primary font-bold">Blog</a>
+                    </div>
+                    <div class=" flex items-center gap-3 font-bold">
+                        <img class="w-6 sm:w-8 md:w-12" src="./assets/logo.png" alt="">
+                        <h2>Donate Bangladesh</h2>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-3 font-bold text-gray-500">
+                            <img src="./assets/coin.png" alt="">
+                            <h3><span id="my-balance">5000</span> BDT</h3>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- Navigation buttons  -->
+            <div class="flex justify-center items-center gap-4 mt-1">
+                <button id="donation-btn" class="btn bg-primary">Donation</button>
+                <button id="history-btn" class="btn">History</button>
+            </div>
         </nav>
-        <!-- Navigation buttons  -->
-        <div class="flex justify-center items-center gap-4 mt-1">
-            <button id="donation-btn" class="btn bg-primary">Donation</button>
-            <button id="history-btn" class="btn">History</button>
-        </div>
     </header>
     <!-- header section ends here  -->
 

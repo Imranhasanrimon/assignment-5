@@ -9,4 +9,9 @@ function innerTextValue(id) {
 function inputValue(id) {
     return document.getElementById(id).value
 }
-console.log();
+
+//ID selector function
+function idSelector(id) {
+    return document.getElementById(id)
+}
+console.log(idSelector('my-balance'));
