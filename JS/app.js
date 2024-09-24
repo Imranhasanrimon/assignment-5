@@ -10,10 +10,25 @@ document.getElementById('noakhali-btn').addEventListener('click', function () {
         alert('Invalid Donation Amount')
         return
     }
+    if (myBalance <= 0) {
+        alert('Please Deposit')
+        return
+    }
 
     document.getElementById('my-balance').innerText = myBalance - donateAmount;
     document.getElementById('noakhali-balance').innerText = noakhaliBalance + donateAmount;
     document.getElementById('noakhali-amount').value = '';
+
+    // updating history 
+    const newHistory = document.createElement('div');
+    newHistory.innerHTML =
+        `
+            <div class="border p-8 rounded-2xl mb-4">
+            <h4 class="text-2xl font-bold">${donateAmount} Taka is Donated for Flood at Noakhali,Bangladesh</h4>
+            <p>Date: ${new Date()}</p>
+        </div>
+`
+    document.getElementById('history').append(newHistory)
 })
 
 //Donation at Feni
@@ -28,10 +43,25 @@ document.getElementById('feni-btn').addEventListener('click', function () {
         alert('Invalid Donation Amount')
         return
     }
+    if (myBalance <= 0) {
+        alert('Please Deposit')
+        return
+    }
 
     document.getElementById('my-balance').innerText = myBalance - donateAmount;
     document.getElementById('feni-balance').innerText = noakhaliBalance + donateAmount;
     document.getElementById('feni-amount').value = '';
+
+    // updating history 
+    const newHistory = document.createElement('div');
+    newHistory.innerHTML =
+        `
+            <div class="border p-8 rounded-2xl mb-6">
+            <h4 class="text-2xl font-bold mb-4">${donateAmount} Taka is Donated for House building at Feni,Bangladesh</h4>
+            <p>Date: ${new Date()}</p>
+        </div>
+`
+    document.getElementById('history').append(newHistory)
 })
 
 //Donation at Quota Movement
@@ -46,8 +76,44 @@ document.getElementById('quota-btn').addEventListener('click', function () {
         alert('Invalid Donation Amount')
         return
     }
+    if (myBalance <= 0) {
+        alert('Please Deposit')
+        return
+    }
 
     document.getElementById('my-balance').innerText = myBalance - donateAmount;
     document.getElementById('quota-balance').innerText = noakhaliBalance + donateAmount;
     document.getElementById('quota-amount').value = '';
+
+    // updating history 
+    const newHistory = document.createElement('div');
+    newHistory.innerHTML =
+        `
+            <div class="border p-8 rounded-2xl mb-4">
+            <h4 class="text-2xl font-bold">${donateAmount} Taka is Donated for Quota Movement Injured people at Noakhali,Bangladesh</h4>
+            <p>Date: ${new Date()}</p>
+        </div>
+`
+    document.getElementById('history').append(newHistory)
+})
+
+
+//Navigating to History 
+document.getElementById('history-btn').addEventListener('click', function () {
+    document.getElementById('history').classList.remove('hidden')
+    document.getElementById('donation').classList.add('hidden')
+
+    document.getElementById('history-btn').classList.add('bg-primary')
+    document.getElementById('donation-btn').classList.remove('bg-primary')
+
+})
+
+//Navigating to Donation 
+document.getElementById('donation-btn').addEventListener('click', function () {
+    document.getElementById('history').classList.add('hidden')
+    document.getElementById('donation').classList.remove('hidden')
+
+    document.getElementById('history-btn').classList.remove('bg-primary')
+    document.getElementById('donation-btn').classList.add('bg-primary')
+
 })

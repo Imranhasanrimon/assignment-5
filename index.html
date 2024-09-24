@@ -41,7 +41,7 @@
                 <div class="">
                     <div class="flex items-center gap-3 font-bold text-gray-500">
                         <img src="./assets/coin.png" alt="">
-                        <h3><span id="my-balance">5500</span> BDT</h3>
+                        <h3><span id="my-balance">5000</span> BDT</h3>
                     </div>
                 </div>
             </div>
@@ -51,12 +51,12 @@
 
     <!-- Navigation buttons  -->
     <div class="flex justify-center items-center gap-4 mt-16">
-        <a href="" class="btn">Donation</a>
-        <a href="" class="btn">History</a>
+        <button id="donation-btn" class="btn bg-primary">Donation</button>
+        <button id="history-btn" class="btn">History</button>
     </div>
 
     <!-- donation section starts here  -->
-    <section class="mb-16 max-w-screen-2xl w-11/12 mx-auto">
+    <section id="donation" class=" mb-16 max-w-screen-2xl w-11/12 mx-auto">
         <!-- Donation for Noakhali  -->
         <article class="grid grid-cols-1 md:grid-cols-2 border p-6 gap-6 rounded-xl mt-8">
             <div>
@@ -65,7 +65,7 @@
             <div>
                 <div class="inline-flex items-center gap-3 bg-secondary py-3 px-4 rounded-xl font-bold text-gray-500 ">
                     <img src="./assets/coin.png" alt="">
-                    <h3><span id="noakhali-balance">5500</span> BDT</h3>
+                    <h3><span id="noakhali-balance">7000</span> BDT</h3>
                 </div>
                 <h2 class="text-xl font-bold my-4">Donate for Flood at Noakhali, Bangladesh</h2>
                 <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation
@@ -86,7 +86,7 @@
             <div>
                 <div class="inline-flex items-center gap-3 bg-secondary py-3 px-4 rounded-xl font-bold text-gray-500 ">
                     <img src="./assets/coin.png" alt="">
-                    <h3><span id="feni-balance">5500</span> BDT</h3>
+                    <h3><span id="feni-balance">10000</span> BDT</h3>
                 </div>
                 <h2 class="text-xl font-bold my-4">Donate for Flood Relief in Feni,Bangladesh</h2>
                 <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation
@@ -107,7 +107,7 @@
             <div>
                 <div class="inline-flex items-center gap-3 bg-secondary py-3 px-4 rounded-xl font-bold text-gray-500 ">
                     <img src="./assets/coin.png" alt="">
-                    <h3><span id="quota-balance">5500</span> BDT</h3>
+                    <h3><span id="quota-balance">5000</span> BDT</h3>
                 </div>
                 <h2 class="text-xl font-bold my-4">Aid for Injured in the Quota Movement</h2>
                 <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation
@@ -121,6 +121,12 @@
         </article>
     </section>
     <!-- donation section ends here  -->
+
+    <!-- History section starts here  -->
+    <section id="history" class="hidden mb-16 max-w-screen-lg w-11/12 mx-auto mt-12">
+
+    </section>
+    <!-- History section ends here  -->
 
 
     <!-- JS files  -->
