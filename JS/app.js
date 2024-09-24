@@ -1,5 +1,6 @@
 //Donation at Noakhali
 document.getElementById('noakhali-btn').addEventListener('click', function () {
+
     const inputValueString = inputValue('noakhali-amount');
     const myBalance = parseFloat(innerTextValue('my-balance'));
     const noakhaliBalance = parseFloat(innerTextValue('noakhali-balance'))
@@ -37,6 +38,7 @@ document.getElementById('noakhali-btn').addEventListener('click', function () {
 
 //Donation at Feni
 document.getElementById('feni-btn').addEventListener('click', function () {
+
     const inputValueString = inputValue('feni-amount');
     const myBalance = parseFloat(innerTextValue('my-balance'));
     const noakhaliBalance = parseFloat(innerTextValue('feni-balance'))
@@ -74,6 +76,7 @@ document.getElementById('feni-btn').addEventListener('click', function () {
 
 //Donation at Quota Movement
 document.getElementById('quota-btn').addEventListener('click', function () {
+
     const inputValueString = inputValue('quota-amount');
     const myBalance = parseFloat(innerTextValue('my-balance'));
     const noakhaliBalance = parseFloat(innerTextValue('quota-balance'))
@@ -130,4 +133,3 @@ document.getElementById('donation-btn').addEventListener('click', function () {
 
 })
 
-//Navigating to Blog page

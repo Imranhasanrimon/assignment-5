@@ -14,4 +14,3 @@ function inputValue(id) {
 function idSelector(id) {
     return document.getElementById(id)
 }
-console.log(idSelector('my-balance'));
