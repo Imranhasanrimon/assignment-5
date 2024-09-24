@@ -16,6 +16,7 @@
                 extend: {
                     colors: {
                         primary: '#B4F461',
+                        secondary: '#F9F7F3',
                     }
                 }
             }
@@ -25,23 +26,26 @@
 
 <body>
     <!-- header section starts here  -->
-    <header class=" max-w-screen-2xl w-11/12 mx-auto">
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
+    <header>
+        <nav class=" bg-secondary">
+            <div
+                class="navbar max-w-screen-2xl w-11/12 mx-auto flex justify-between items-center flex-col sm:flex-row text-xl gap-2 pt-6 pb-16">
+                <div class="">
 
-                <a class="btn  text-xl bg-primary">daisyUI</a>
-            </div>
-            <div class="middle--content flex items-center gap-3">
-                <img src="./assets/logo.png" alt="">
-                <h2>Donate Bangladesh</h2>
-            </div>
-            <div class="navbar-end">
-                <div class="flex items-center gap-3">
-                    <img src="./assets/coin.png" alt="">
-                    <h3><span>5500</span> BDT</h3>
+                    <a class="btn  text-xl bg-primary font-bold">Blog</a>
+                </div>
+                <div class=" flex items-center gap-3 font-bold">
+                    <img src="./assets/logo.png" alt="">
+                    <h2>Donate Bangladesh</h2>
+                </div>
+                <div class="">
+                    <div class="flex items-center gap-3">
+                        <img src="./assets/coin.png" alt="">
+                        <h3><span>5500</span> BDT</h3>
+                    </div>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
     <!-- header section ends here  -->
 
